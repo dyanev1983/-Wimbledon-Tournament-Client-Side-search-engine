@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="userInput.js"></script>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Grand Slam Tennis Tournament</h1>
+    <h2>I confirm that this coursework submission is entirely my own work, except where explicitly stated otherwise.</h2>
+    <table class="table">
+        <tr>
+            <td>
+                <p><b>Please choose a set of results (Man or Women).</b></p>
+                <form>
+                    <select id="gender">
+              <option value = "none">None</option>
+              <option value = "mens">Man</option>
+              <option value = "womens">Women</option>
+            </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td id="td2">
+                <p><b>Please enter player's name below and choose one of the following options.</b></p>
+                <p><input type="text" id="name">
+
+                    <form>
+                        <select id="nameCondition">
+                  <option value = "none">None</option>
+                  <option value = "equal">Equal</option>
+                  <option value = "contains">Contains</option>
+                </select>
+                    </form>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <p><b>Please select the outcome(winner, runner-up or either)</b></p>
+                <form>
+                    <select id="outcome">
+              <option value = "either">Eithere</option>
+              <option value = "winner">Winner</option>
+              <option value = "runnerUp">Runner-up</option>
+            </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Please enter tournament's year below and choose one of the following options.</b></p>
+                <p><input type="text" id="year">
+
+                    <form>
+                        <select id="yearCondition">
+                  <option value = "equals">Equal</option>
+                  <option value = "greater">Greater than</option>
+                  <option value = "less">Less than</option>
+                </select>
+                    </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Please select a tournament.</b></p>
+                <form>
+                    <select id="tournament">
+              <option value = "any">Any</option>
+              <option value = "Australian Open">Australian Open</option>
+              <option value = "French Open">French Open</option>
+              <option value = "Wimbledon">Wimbledon</option>
+              <option value = "U.S. Open">U.S. Open</option>
+            </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" id="myButton" onclick="disableButton(this)" value="Submit">
+                <input type="button" id="refresh" onclick="refreshButton(this)" value="Reload page">
+            </td>
+        </tr>
+    </table>
+    <div id="table"></div>
+
+</body>
+
+</html>

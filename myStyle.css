@@ -1,0 +1,39 @@
+ body {
+            background-color: #EDEDED;
+        }
+        
+        table.table {
+            table-layout: auto;
+            width: 90%;
+            position: center;
+        }
+        
+        table.table td {
+            height: 20%;
+            text-align: left;
+        }
+        
+        h1 {
+            text-align: center;
+			background-color: #FAD9A7;
+			padding: 20px;
+			border: 1px solid black;
+        }
+        
+        table.table_2 {
+            background-color: #FEFE99;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        
+        table.table_2 td {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        table.table_2 th {
+            text-align: center;
+            border: 1px solid black;
+            background-color: #7FFA7F;
+            padding: 10px;
+        }
